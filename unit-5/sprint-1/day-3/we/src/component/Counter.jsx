@@ -1,7 +1,7 @@
 import { useState } from "react";
-export function Counter(props) {
+export function Counter() {
   // console.log(props.count);
-  const [counter, setCounter] = useState(props.count);
+  const [counter, setCounter] = useState(0);
   const handle = (value) => {
     setCounter(counter + value);
   };
@@ -27,7 +27,7 @@ export function Counter(props) {
           setCounter(counter * 2);
         }}
       >
-        Double
+        Reset
       </button>
     </div>
   );
