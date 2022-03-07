@@ -7,10 +7,10 @@ export const Pens=()=>{
     }
     return(<div className="items">
     <span>Pens:</span>
-    <button className="addPen" onClick={handlepens(1)}>
+    <button className="addPen" onClick={()=>{handlepens(1)}}>
         +
     </button>
-    <button className="remPen" onClick={handlepens(-1)}>
+    <button className="remPen" onClick={()=>{handlepens(-1)}}>
         -
     </button>
     <span className="totalPens">{pen}</span>

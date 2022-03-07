@@ -7,10 +7,10 @@ export const Books=()=>{
     }
     return(<div className="items">
     <span>Books:</span>
-    <button className="addBook" onClick={handlebook(1)}>
+    <button className="addBook" onClick={()=>{handlebook(1)}}>
         +
     </button>
-    <button className="remBook" onClick={handlebook(-1)}>
+    <button className="remBook" onClick={()=>{handlebook(-1)}}>
         -
     </button>
     <span className="totalBooks">{book}</span>

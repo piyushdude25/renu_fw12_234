@@ -7,10 +7,10 @@ export const InkPens=()=>{
     }
     return(<div className="items">
     <span>Inkpens:</span>
-    <button className="addInkpen" onClick={handleinkpen(1)}>
+    <button className="addInkpen" onClick={()=>{handleinkpen(1)}}>
         +
     </button>
-    <button className="remInkpen" onClick={handleinkpen(-1)}>
+    <button className="remInkpen" onClick={()=>{handleinkpen(-1)}}>
         -
     </button>
     <span className="totalInkpens">{inkpen}</span>

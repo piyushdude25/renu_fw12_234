@@ -7,10 +7,10 @@ export const Notebooks=()=>{
     }
     return(<div className="items">
     <span>Notebooks:</span>
-    <button className="addNotebook" onClick={handlenotebook(1)}>
+    <button className="addNotebook" onClick={()=>{handlenotebook(1)}}>
         +
     </button>
-    <button className="remNotebook" onClick={handlenotebook(-1)}>
+    <button className="remNotebook" onClick={()=>{handlenotebook(-1)}}>
         -
     </button>
     <span className="totalNotebook">{notebook}</span>
