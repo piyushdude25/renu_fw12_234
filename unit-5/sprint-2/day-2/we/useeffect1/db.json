@@ -1,0 +1,54 @@
+{
+  "groceries": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "react",
+      "author": "frontend"
+    },
+    {
+      "title": "nodejs",
+      "purchased": false,
+      "id": 5
+    },
+    {
+      "title": "expressjs",
+      "purchased": false,
+      "id": 6
+    },
+    {
+      "title": "mongo",
+      "purchased": false,
+      "id": 7
+    },
+    {
+      "title": "expressjs",
+      "purchased": false,
+      "id": 8
+    },
+    {
+      "title": "ex",
+      "purchased": false,
+      "id": 9
+    },
+    {
+      "title": "mern",
+      "purchased": false,
+      "id": 10
+    },
+    {
+      "title": "quequ",
+      "purchased": false,
+      "id": 11
+    },
+    {
+      "title": "hello",
+      "purchased": false,
+      "id": 12
+    }
+  ]
+}
