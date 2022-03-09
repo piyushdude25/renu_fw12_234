@@ -1,0 +1,29 @@
+{
+  "todolist": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "renu",
+      "purchased": false,
+      "id": 2
+    },
+    {
+      "title": "react",
+      "purchased": false,
+      "id": 3
+    },
+    {
+      "title": "react",
+      "purchased": false,
+      "id": 4
+    },
+    {
+      "title": "mongo",
+      "purchased": false,
+      "id": 5
+    }
+  ]
+}

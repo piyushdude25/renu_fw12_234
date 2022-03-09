@@ -1,12 +1,6 @@
 .App {
   text-align: center;
 }
-.red{
-  background-color: yellow;
-  color: black;
-  border: 1px solid red;
-  margin-bottom: 15px;
-}
 
 .App-logo {
   height: 40vmin;

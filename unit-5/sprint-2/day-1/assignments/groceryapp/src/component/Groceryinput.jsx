@@ -1,14 +1,14 @@
 import { useState } from "react"
 
 export  const Groceryinput =({addtodo})=>{
-    const[text,setText]=useState([]);
+    const[text,setText]=useState("");
    
     return (<div>
         
-        <input type=" text" onChange={(e)=>{
-            setText(e.target.value);
+        <input type=" text" onChange={(e)=>(
+            setText(e.target.value)
 
-        }}/>
+        )}/>
         <button onClick={()=>{
             addtodo(text);
 

@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import { Grocery } from './component/Grocery'
-import './App.css';
+import { Todo } from './components/Todo'
+import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1>Grocerry App</h1>
-      <Grocery/>
-     
+     <h3>todo list using useeffect</h3>
+     <hr/>
+     <Todo/>
     </div>
   )
 }
