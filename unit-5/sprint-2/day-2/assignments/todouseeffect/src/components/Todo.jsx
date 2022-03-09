@@ -13,13 +13,19 @@ export const Todo=()=>{
         })
 
     }
-    const deleteitem=(i,itemid)=>{
-        console.log(i,itemid)
+    const deleteitem=(index)=>{
+        //console.log(i,itemid)
+        setTodo((todo)=>{
+          return  todo.filter((ele,i)=>{
+                return index!=i;
+            })
+
+        })
 
     }
     console.log(todo)
-    return(<div>
-        <input type={text} onChange={(e)=>{
+    return(<div className="main">
+      <div className="inputcolor">  <input type={text} onChange={(e)=>{
         setText (e.target.value)   }}></input>
        <button onClick={()=>{
         fetch("http://localhost:3004/todolist",{method:"POST",
@@ -28,10 +34,10 @@ export const Todo=()=>{
     }).then(()=>{
         getData();
     });
-    }}> save button</button>
+    }}> save button</button></div>
     {todo.map((e,i)=>(
-        <div> "title"-{e.title} "id":-{e.id} <button onClick={()=>{
-            deleteitem(i,e.id);
+        <div className="listclass"> "title"-{e.title} key={i} id={i} <button onClick={()=>{
+            deleteitem(i);
         }}>Delete</button></div>
 
     ))}
