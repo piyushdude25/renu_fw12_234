@@ -3,12 +3,13 @@ import axios from "axios";
 export const Todo=()=>{
     const[text,setText]=useState("");
     const[todo,setTodo]=useState([]);
+    const [page,setPage]=useState(1);
     console.log(text)
    useEffect(()=>{
         getData();
-    },[])
+    },[page])
     const getData=()=>{
-        axios.get(`http://localhost:3004/todolist`).then((res)=>{
+        axios.get(`http://localhost:3004/todolist?_limit=3 &_page=${page}`).then((res)=>{
             setTodo(res.data);
         })
 
@@ -41,5 +42,7 @@ export const Todo=()=>{
         }}>Delete</button></div>
 
     ))}
+    <button onClick={()=>{setPage(page-1)}}>PREV</button>
+    <button onClick={()=>{setPage(page+1)}}>NEXT</button>
     </div>)
 }
