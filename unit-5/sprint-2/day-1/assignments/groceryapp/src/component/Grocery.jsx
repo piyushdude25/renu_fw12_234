@@ -14,31 +14,26 @@ export const Grocery =()=>{
         };
         setTodos([...todos,t]);
     }
-    const deleteitem=(item,i)=>{
+    const deleteitem=(id)=>{
+        console.log(id)
        
-        {todos.map((e,i)=>{
-            console.log(e)
-            if(e.id===item.id)
-        {
-           
-         
+     
+        setTodos((todos)=>{
+            return todos.filter((arrele,index)=>{
+                return index!==id;
+            })
+        })
           
           
-        }
-        else{()=>{
-            setTemp(e);
-        }
-        }
-
-        })}
-        console.log(temp.length);
-
+       
     }
+       
+    
     
     return(
         <div>
         <Groceryinput addtodo={addtodo}/>
-        {todos.map((e,i)=>( <Grocerylist todo={e} key={e.id}  deleteitem={deleteitem} index={i}/>)
+        {todos.map((e,i)=>( <Grocerylist todo={e} key={i} id={i}  onSelect={deleteitem} />)
            
         )}
 

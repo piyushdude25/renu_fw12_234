@@ -1,7 +1,7 @@
-export const Grocerylist=({todo,deleteitem,index})=>{
+export const Grocerylist=(props)=>{
     
     
-    return<div><div className="red"><div>list id:{todo.id}</div><>div</>list title:-{todo.title}</div><div>list status:{todo.status}</div><div><button onClick={()=>{
-        deleteitem(todo,index);
+    return<div><div className="red"><div>list id:{props.todo.title}</div><button onClick={()=>{
+        props.onSelect(props.id)
     }}>Delete</button></div></div>
 };
