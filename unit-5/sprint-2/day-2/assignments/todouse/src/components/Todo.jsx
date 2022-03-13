@@ -9,7 +9,7 @@ export const Todo=()=>{
         getData();
     },[page])
     const getData=()=>{
-        axios.get(`http://localhost:3004/todolist?_limit=3 &_page=${page}`).then((res)=>{
+        axios.get(`http://localhost:3001/todolist?_limit=3 &_page=${page}`).then((res)=>{
             setTodo(res.data);
         })
 
