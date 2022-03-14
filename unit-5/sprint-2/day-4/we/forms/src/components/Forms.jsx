@@ -5,7 +5,7 @@ export const Forms=()=>{
     const [formdata,setFormdata]=useState({name:"",age:""});
     const handledata=(e)=>{
         const {id,value}=e.target;
-        setFormdata({...formdata,[id]:value,});
+        setFormdata({...formdata,[id]:value});
      
     }
     const  handlesubmit=(e)=>{
