@@ -1,0 +1,54 @@
+{
+  "houses": [
+    {
+      "name": "reebh",
+      "ownerName": "gh",
+      "address": "hhshhs",
+      "areaCode": "244",
+      "rent": "89999",
+      "bachelor": true,
+      "married": false,
+      "id": 1
+    },
+    {
+      "name": "puja",
+      "ownerName": "puja",
+      "address": "wwrrw",
+      "areaCode": "6555",
+      "rent": "899999",
+      "bachelor": true,
+      "married": false,
+      "id": 2
+    },
+    {
+      "name": "renu",
+      "ownerName": "paro",
+      "address": "hhha",
+      "areaCode": "233",
+      "rent": "7678",
+      "bachelor": false,
+      "married": true,
+      "id": 3
+    },
+    {
+      "name": "renu",
+      "ownerName": "puja",
+      "address": "hggg",
+      "areaCode": "888",
+      "rent": "0999",
+      "bachelor": true,
+      "married": false,
+      "id": 4
+    },
+    {
+      "name": "puja",
+      "ownerName": "kajjaj",
+      "address": "hhh",
+      "areaCode": "889",
+      "rent": "56777",
+      "bachelor": true,
+      "married": false,
+      "id": 5
+    }
+  ]
+}
