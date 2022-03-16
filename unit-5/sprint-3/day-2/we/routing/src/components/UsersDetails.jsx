@@ -1,8 +1,7 @@
 import {  useParams ,Navigate} from "react-router-dom"
 import { useEffect } from "react";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
 export const UsersDetails=()=>{
     const {userid}=useParams();
     const [user,setUsers]=useState();
@@ -11,8 +10,10 @@ export const UsersDetails=()=>{
 
 
     },[])
-    if(false)
+    if(true)
     {
+        //contextapi
+        //take user to login page
         return <Navigate to={"/login"}/>;
     }
     return <div><h1>Products name is :{userid}</h1></div>
