@@ -8,11 +8,12 @@ export const ProductsDetailsPage = () => {
  const {id}=useParams();
  useEffect(()=>{
    axios.get(`http://localhost:3001/products/${id}`).then((response)=>{
-     console.log(response.data)
+     
      setProduct(...[response.data])
    })
  },[])
- console.log("product",product)
+ console.log("product length",product.length)
+ console.log("product.id",product.id)
     return (
       <>
         <div
@@ -23,7 +24,7 @@ export const ProductsDetailsPage = () => {
             textAlign: "left",
           }}
         >
-          <img src={product.img} alt="" />
+          {id==product.id?<div className="productdiv"> <img src={product.img} alt="" />
           <div className="productDetails" style={{ padding: "20px" }}>
             <div>
               <h2 className="productName">{product.name}</h2>
@@ -33,7 +34,9 @@ export const ProductsDetailsPage = () => {
             <div style={{ width: "700px", paddingLeft: "30px" }}>
               {/* Show Product specification here */}
             </div>
-          </div>
+          </div></div>:" Product does not exist"}
+          
+        
         </div>
       </>
     );
