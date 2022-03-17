@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+       "name" : "SmartPhone",
+        "price": 30,
+        "id" : 0,
+        "img":"https://images.meesho.com/images/products/79288734/nfv4q_512.jpg"
+    },
+    {
+        "name" : "Watch",
+        "price" : 20,
+        "id" : 1,
+        "img":"https://images.meesho.com/images/products/5861756/2_512.jpg"
+    },
+    {
+        "name" : "Shirt",
+        "price" : 50,
+        "id" : 2,
+        "img":"https://images.meesho.com/images/products/40440345/cwzcn_512.jpg"
+    },
+    {
+        "name" : "Pants",
+        "price" : 100,
+        "id" : 3,
+        "img":"https://images.meesho.com/images/products/74944755/entpy_512.jpg"
+    }
+]
+    
+}

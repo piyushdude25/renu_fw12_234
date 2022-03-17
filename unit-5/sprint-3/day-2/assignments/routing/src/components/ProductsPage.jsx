@@ -2,7 +2,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export const ProductsPage = () => {
+  const [product,setProduct]=useState([]);
+  useEffect(()=>{
+    axios.get(" http://localhost:3001/products").then((response)=>{
+      console.log("response",response.data);
+      setProduct([...response.data]);
+
+    })
+    console.log("product",product)
+
+  },[])
   return (
     <>
       <div
@@ -19,7 +30,7 @@ export const ProductsPage = () => {
         <h4>Price</h4>
         <h4>Details</h4>
       </div>
-      {[].map((el) => {
+      {product.map((el) => {
         return (
           <div
             className="container"
@@ -31,7 +42,7 @@ export const ProductsPage = () => {
               margin: "auto",
               paddingTop: "10px",
             }}
-          >
+          key={el.id} >
             <div className="name">{el.name}</div>
             <div className="price">{el.price}</div>
             <Link to={`/products/${el.id}`}>more details</Link>

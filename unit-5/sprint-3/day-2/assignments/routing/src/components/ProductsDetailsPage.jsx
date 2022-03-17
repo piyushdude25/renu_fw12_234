@@ -1,4 +1,18 @@
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useEffect } from "react";
+import { useState } from "react";
 export const ProductsDetailsPage = () => {
+  const[product,setProduct]=useState([]);
+
+ const {id}=useParams();
+ useEffect(()=>{
+   axios.get(`http://localhost:3001/products/${id}`).then((response)=>{
+     console.log(response.data)
+     setProduct(...[response.data])
+   })
+ },[])
+ console.log("product",product)
     return (
       <>
         <div
@@ -9,7 +23,7 @@ export const ProductsDetailsPage = () => {
             textAlign: "left",
           }}
         >
-          <img src={""} alt="" />
+          <img src={product.img} alt="" />
           <div className="productDetails" style={{ padding: "20px" }}>
             <div>
               <h2 className="productName">{product.name}</h2>
