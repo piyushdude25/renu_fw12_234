@@ -1,0 +1,90 @@
+{
+  "books": [
+    {
+      "id":1,
+      "title":"silicon women",
+      "imageUrl":"https://www.sparklingbooks.com/user/products/Sicilian%20Woman%20161x250.jpg",
+      "description":"Prosecuting criminal cases, barrister Anthony Rathe convinced a jury to imprison",
+      "reviews":[
+          "multiple reviews here"
+      ],
+      "author":"abc",
+      "price": 1899,
+      "section": "mystery",
+      "isbnNumber": 1234567
+   },
+   {
+    "id":2,
+    "title":"lynwood",
+    "imageUrl":"https://www.sparklingbooks.com/user/products/Lynwood%20164x250.jpg",
+    "description":"Prosecuting criminal cases, barrister Anthony Rathe convinced a jury to imprison",
+    "reviews":[
+        "multiple reviews here"
+    ],
+    "author":"gfr",
+    "price": 788,
+    "section": "mystery",
+    "isbnNumber": 12786
+ }
+  ,
+  {
+    "id":3,
+    "title":"mythewe",
+    "imageUrl":"https://www.sparklingbooks.com/user/products/Rathe%201%20167x250.jpg",
+    "description":"lipsis is a disturbing thriller stemming from what is left unsaid, what bounces around in the mind and evaporates when trying to remember. ",
+    "reviews":[
+        "multiple reviews here"
+    ],
+    "author":"hisanAuthor",
+    "price": 9934,
+    "section": "mystery",
+    "isbnNumber": 899867
+ },
+ {
+  "id":4,
+  "title":"oops",
+  "imageUrl":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1473461230l/26083308._SY75_.jpg",
+  "description":"lipsis is a disturbing thriller stemming from what is left unsaid, what bounces around in the mind and evaporates when trying to remember. ",
+  "reviews":[
+      "multiple reviews here"
+  ],
+  "author":"renukauthor",
+  "price": 34454,
+  "section": "technology",
+  "isbnNumber": 9884567
+}
+  
+,
+{
+  "id":5,
+  "title":"interpretation",
+  "imageUrl":"https://www.obooko.com/images-cache/calculations-and-interpretations-of-the-fundamental-constants-c7e900affd456dfb71828e8a7ede212a.jpg",
+  "description":"lipsis is a disturbing thriller stemming from what is left unsaid, what bounces around in the mind and evaporates when trying to remember. ",
+  "reviews":[
+      "multiple reviews here"
+  ],
+  "author":"punit",
+  "price": 8988,
+  "section": "technology",
+  "isbnNumber":784567
+}
+  
+    ,
+    {
+      "id":6,
+      "title":"circuits",
+      "imageUrl":"https://www.obooko.com/images-cache/dc-circuits-obooko-ebook-e00c531434f2bb5e81e627b54f1e5df0.jpg",
+      "description":"lipsis is a disturbing thriller stemming from what is left unsaid, what bounces around in the mind and evaporates when trying to remember. ",
+      "reviews":[
+          "multiple reviews here"
+      ],
+      "author":"garima",
+      "price": 9004,
+      "section": "technology",
+      "isbnNumber": 944567
+    }
+      
+        
+    
+  ]
+}
