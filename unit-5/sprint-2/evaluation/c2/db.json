@@ -49,6 +49,106 @@
       "bachelor": true,
       "married": false,
       "id": 5
+    },
+    {
+      "name": "renu",
+      "ownerName": "renu",
+      "address": "uiii",
+      "areaCode": "788",
+      "rent": "78999",
+      "bachelor": true,
+      "married": true,
+      "id": 6
+    },
+    {
+      "name": "renu",
+      "ownerName": "refg",
+      "address": "yuuu",
+      "areaCode": "877",
+      "rent": "8999",
+      "bachelor": true,
+      "married": true,
+      "id": 7
+    },
+    {
+      "name": "renu",
+      "ownerName": "refg",
+      "address": "yuuu",
+      "areaCode": "877",
+      "rent": "8999",
+      "bachelor": true,
+      "married": true,
+      "id": 8
+    },
+    {
+      "name": "renu",
+      "ownerName": "refg",
+      "address": "yuuu",
+      "areaCode": "877",
+      "rent": "8999",
+      "bachelor": true,
+      "married": true,
+      "id": 9
+    },
+    {
+      "name": "renu",
+      "ownerName": "refg",
+      "address": "yuuu",
+      "areaCode": "877",
+      "rent": "8999",
+      "bachelor": true,
+      "married": true,
+      "id": 10
+    },
+    {
+      "name": "renu",
+      "ownerName": "renu",
+      "address": "uuyu",
+      "areaCode": "7888",
+      "rent": "98888",
+      "bachelor": false,
+      "married": false,
+      "id": 11
+    },
+    {
+      "name": "renu",
+      "ownerName": "kumarbb",
+      "address": "yyu",
+      "areaCode": "7888",
+      "rent": "87888",
+      "bachelor": true,
+      "married": false,
+      "id": 12
+    },
+    {
+      "name": "renu",
+      "ownerName": "renu",
+      "address": "hjj",
+      "areaCode": "777",
+      "rent": "888",
+      "bachelor": false,
+      "married": false,
+      "id": 13
+    },
+    {
+      "name": "paro",
+      "ownerName": "paro",
+      "address": "agaha",
+      "areaCode": "7888",
+      "rent": "oooo",
+      "bachelor": false,
+      "married": false,
+      "id": 14
+    },
+    {
+      "name": "paro",
+      "ownerName": "paro",
+      "address": "agaha",
+      "areaCode": "7888",
+      "rent": "oooo",
+      "bachelor": false,
+      "married": true,
+      "id": 15
     }
   ]
 }

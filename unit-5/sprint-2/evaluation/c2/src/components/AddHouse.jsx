@@ -10,6 +10,7 @@ export const AddHouse = ({handleformdata}) => {
     }
     const handlesubmit=(e)=>{
         e.preventDefault();
+        console.log("formdata",formdata)
         handleformdata(formdata);
 
     }

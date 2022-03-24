@@ -4,9 +4,15 @@ import './App.css'
 import { AddHouse } from './components/AddHouse';
 import { Rentals } from './components/Rentals';
 import axios from 'axios';
+import { useEffect } from 'react';
 
 function App() {
   const [data,setData]=useState([]);
+
+  useEffect(()=>{
+    getdata();
+  },[]);
+  
   const handleformdata=async(d)=>{
     console.log(d);
     //setData([...data,d]);
@@ -21,13 +27,15 @@ function App() {
 
   }
 
+  console.log("data",data);
+
   return (
     <div className="App">
      <AddHouse handleformdata={handleformdata}/>
-     {data.map((e)=>{
-        <Rentals key={e.id} house={e}/>
+     
+        <Rentals house={data}/>
 
-     })}
+    
     
     </div>
   )

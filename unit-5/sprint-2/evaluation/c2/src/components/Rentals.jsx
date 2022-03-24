@@ -1,6 +1,10 @@
+import { useState } from "react";
 
 
 export const Rentals = ({house}) => {
+  
+
+ // console.log("house",house)
   return (
     <div className="rentalContainer">
         <div>{house.name}</div>
@@ -30,7 +34,7 @@ export const Rentals = ({house}) => {
           </tr>
         </thead>
         <tbody>
-          {[house].map((house, index) => {
+          {house.map((house, index) => {
             return (
               <tr key={house.id} className="houseDetails">
                 <td className="houseId">{house.id}</td>
