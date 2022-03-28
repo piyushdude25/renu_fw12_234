@@ -1,0 +1,54 @@
+{
+  "meetups": [
+    {
+      "id": 1,
+      "title": "Saunter Strech",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://sp.yimg.com/ib/th?&id=ODL.3fd61c24dbd5a6a53c592a2ea293f0b0"
+    },
+    {
+      "id": 2,
+      "title": "Healthy food",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "food",
+      "description": "Random Event",
+      "image": "https://sp.yimg.com/ib/th?&id=ODL.32ad038b7d36a1ddbf3a2c211da51c64"
+    },
+    {
+      "id": 3,
+      "title": "fluent english",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "language",
+      "description": "Random Event",
+      "image": "https://sp.yimg.com/ib/th?&id=ODL.cb0db6195ccdf0f97cb64da93d339167"
+    },
+    {
+      "id": 4,
+      "title": "student of the year1",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "movie",
+      "description": "Random Event",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.LekEk4sg_14lXowj5kqyFAHaJ4&pid=Api&rs=1&c=1&qlt=95&w=80&h=107"
+    },
+    {
+      "id": 5,
+      "title": "indian cloth",
+      "location": "bangalore",
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "culture",
+      "description": "Random Event",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.BcfKLDFKaFSwdbOLDWm26gHaLH&pid=Api&rs=1&c=1&qlt=95&w=76&h=114"
+    }
+  ]
+}
