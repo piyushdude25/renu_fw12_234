@@ -1,0 +1,10 @@
+.table > tbody > tr > td {
+  width: 200px;
+  height: 40px;
+  border: 1px solid red;
+}
+.table > thead > tr > td {
+  width: 200px;
+  height: 40px;
+  border: 1px solid red;
+}

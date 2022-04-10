@@ -1,0 +1,58 @@
+{
+  "regisration": [
+    {
+      "username": "shashi",
+      "age": "23",
+      "birth": "2022-04-15",
+      "stateName": "jharkhand",
+      "address": "kharanti",
+      "pincode": "825311",
+      "id": 1
+    },
+    {
+      "username": "renu",
+      "age": "23",
+      "birth": "2022-04-15",
+      "stateName": "jharkhand",
+      "address": "kharanti",
+      "pincode": "825311",
+      "id": 2
+    },
+    {
+      "username": "pujs",
+      "age": "17",
+      "birth": "2022-04-01",
+      "stateName": "jhhh",
+      "address": "kaamm",
+      "pincode": "8999",
+      "id": 3
+    },
+    {
+      "username": "atysh",
+      "age": "11",
+      "birth": "2022-04-29",
+      "stateName": "yuuuu",
+      "address": "yyyyy",
+      "pincode": "67777",
+      "id": 4
+    },
+    {
+      "username": "nidhi",
+      "age": "11",
+      "birth": "2022-04-20",
+      "stateName": "yuuuqjj",
+      "address": "hhbjja",
+      "pincode": "788",
+      "id": 5
+    },
+    {
+      "username": "sushil",
+      "age": "12",
+      "birth": "2022-04-22",
+      "stateName": "hjhjhj",
+      "address": "hu",
+      "pincode": "78888",
+      "id": 6
+    }
+  ]
+}
