@@ -1,0 +1,29 @@
+{
+  "country": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "city": [
+    {
+      "id": 1,
+      "city": "hazaribagh",
+      "country": "india",
+      "population": 10000
+    },
+    {
+      "id": 2,
+      "city": "bokaro",
+      "country": "india",
+      "population": 89900
+    },
+    {
+      "city": "ranchi",
+      "country": "india",
+      "population": "600000",
+      "id": 3
+    }
+  ]
+}
