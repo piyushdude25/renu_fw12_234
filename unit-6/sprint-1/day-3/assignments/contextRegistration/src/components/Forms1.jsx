@@ -37,7 +37,7 @@ export const Onne = () => {
         />
         <br />
         <button
-          disabled={!username && !age && birth}
+          disabled={!username && !age && !birth}
           onClick={() => navigate("/registration/two")}
         >
           NEXT

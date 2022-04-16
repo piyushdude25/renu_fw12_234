@@ -37,7 +37,7 @@ export const RegistrationContextProvider = ({ children }) => {
     postData();
   };
   const postData = () => {
-    axios.post(" http://localhost:3001/regisration", state);
+    axios.post(" http://localhost:3002/regisration", state);
   };
 
   return (

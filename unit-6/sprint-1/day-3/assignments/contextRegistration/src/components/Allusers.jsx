@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export const Allusers = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    axios.get(" http://localhost:3001/regisration").then((data) => {
+    axios.get(" http://localhost:3002/regisration").then((data) => {
       setUsers(data.data);
     });
   }, []);

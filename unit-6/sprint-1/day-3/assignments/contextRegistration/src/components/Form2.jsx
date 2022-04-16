@@ -16,7 +16,7 @@ export const Two = () => {
   } = useContext(RegistrationContext);
   const navigate = useNavigate();
   console.log(stateName, address, pincode);
-  if (!username && !age && birth) {
+  if (!username && !age && !birth) {
     return <Navigate to="/registration/one"></Navigate>;
   }
   return (
@@ -51,7 +51,7 @@ export const Two = () => {
       </div>
       <div>
         <button
-          disabled={!stateName && !address && pincode}
+          disabled={!stateName && !address && !pincode}
           onClick={handleSubmit}
         >
           submit
