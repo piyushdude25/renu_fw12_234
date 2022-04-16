@@ -49,6 +49,7 @@ export const Home = () => {
         <table>
           <thead>
             <tr>
+              <td>id</td>
               <td>city</td>
               <td>country</td>
               <td>population</td>
@@ -59,6 +60,7 @@ export const Home = () => {
           <tbody>
             {data.map((e) => (
               <tr>
+                <td>{e.id}</td>
                 <td>{e.city}</td>
                 <td>{e.country}</td>
                 <td>{e.population}</td>
