@@ -1,0 +1,76 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "renu",
+      "gender": "female",
+      "age": 15,
+      "classes_id": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "puja",
+      "gender": "female",
+      "age": 18,
+      "classes_id": [1, 2]
+    },
+    {
+      "id": 3,
+      "name": "shashi",
+      "gender": "male",
+      "age": 31,
+      "classes_id": [1]
+    },
+    {
+      "id": 4,
+      "name": "ayush",
+      "gender": "female",
+      "age": 23,
+      "classes_id": [3, 5]
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "grade": 1,
+      "section": "a",
+      "subject": "english",
+      "teacher_id": 1
+    },
+    {
+      "id": 2,
+      "grade": 1,
+      "section": "b",
+      "subject": "computer",
+      "teacher_id": 2
+    },
+    {
+      "id": 3,
+      "grade": 2,
+      "section": "a",
+      "subject": "math",
+      "teacher_id": 2
+    },
+    {
+      "id": 4,
+      "grade": 3,
+      "section": "b",
+      "subject": "math",
+      "teacher_id": 3
+    },
+    {
+      "id": 5,
+      "grade": 4,
+      "section": "b",
+      "subject": "express",
+      "teacher_id": 4
+    },
+    {
+      "id": 6,
+      "grade": 4,
+      "section": "b",
+      "subject": "express",
+      "teacher_id": 1
+    }
+  ]
+}
