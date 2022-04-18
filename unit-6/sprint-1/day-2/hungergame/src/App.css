@@ -1,0 +1,19 @@
+.showdata {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  grid-gap: 60px;
+}
+.showdata > div > div:nth-child(1) {
+  width: 100%;
+  height: 50%;
+  border: 1px solid red;
+}
+.showdata > div > div:nth-child(1) > img {
+  width: 100%;
+}
+.showdata > div > div:nth-child(2) {
+  width: 100%;
+  height: 50%;
+  border: 1px solid red;
+}
