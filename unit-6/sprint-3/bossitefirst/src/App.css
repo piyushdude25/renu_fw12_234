@@ -1,0 +1,12 @@
+table,
+th,
+td {
+  border: 1px solid;
+}
+td {
+  width: 300px;
+  height: 30px;
+}
+.spandiv > span {
+  margin-right: 40px;
+}

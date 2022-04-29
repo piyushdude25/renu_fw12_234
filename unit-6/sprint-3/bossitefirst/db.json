@@ -1,0 +1,75 @@
+{
+  "city": [
+    {
+      "id": 1,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Hazaribagh",
+      "address": "Barkagaon",
+      "capacity": "30",
+      "costPerDay": "600",
+      "verified": "Yes",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Hazaribagh",
+      "address": "korrah",
+      "capacity": "60",
+      "costPerDay": "3000",
+      "verified": "Yes",
+      "rating": "3.5"
+    },
+    {
+      "id": 3,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Bokaro",
+      "address": "Thermal",
+      "capacity": "20",
+      "costPerDay": "2000",
+      "verified": "No",
+      "rating": "3"
+    },
+    {
+      "id": 4,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Bokaro",
+      "address": "Thermal",
+      "capacity": "50",
+      "costPerDay": "2500",
+      "verified": "Yes",
+      "rating": "3"
+    },
+
+    {
+      "id": 5,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Delhi",
+      "address": "Gurugram",
+      "capacity": "70",
+      "costPerDay": "5000",
+      "verified": "No",
+      "rating": "4.1"
+    },
+    {
+      "id": 6,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Delhi",
+      "address": "Gurgaon",
+      "capacity": "100",
+      "costPerDay": "3200",
+      "verified": "Yes",
+      "rating": "5"
+    },
+    {
+      "id": 7,
+      "name": "Wiggle Bubble Pets Services",
+      "city": "Mumbai",
+      "address": "Agripada",
+      "capacity": "40",
+      "costPerDay": "2500",
+      "verified": "No",
+      "rating": "3.4"
+    }
+  ]
+}

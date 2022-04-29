@@ -12,8 +12,7 @@ app.get("/", (req, res) => {
   res.send("hello");
 });
 app.get("/login", async (req, res) => {
-  const user = await Register.find();
-  res.send(user);
+  res.send("login");
 });
 app.post("/register", async (req, res) => {
   try {
