@@ -1,0 +1,379 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
+nav > div {
+  margin-bottom: 50px;
+}
+.headerdiv {
+  position: relative;
+}
+nav > img {
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.headerdiv {
+  display: flex;
+
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+.headerdiv > div {
+  display: flex;
+
+  align-items: center;
+}
+
+.imgurlogo {
+  width: 100px;
+  height: 30px;
+}
+
+.navbar {
+  flex: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+#searchdiv {
+  width: 100%;
+  height: 30px;
+  border-radius: 13px;
+  display: flex;
+}
+#searchbar > i {
+  font-size: 50px;
+  font-size: 24px;
+  position: absolute;
+}
+.searchinput {
+  outline: none;
+}
+.searchinput:focus {
+  outline: none;
+}
+#signupdiv i {
+  color: white;
+}
+.plus {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1bb76e;
+  border-radius: 2px;
+  margin-left: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.imgurdiv {
+  display: flex;
+}
+
+.signupdiv {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-left: 80px;
+}
+
+#ad,
+#sign {
+  margin-right: 12px;
+}
+#ad {
+  background-color: blueviolet;
+}
+
+#searchdiv {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 25px;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#searchdiv > i {
+  color: white;
+  font-size: 24px;
+}
+#searchdiv > input {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+::placeholder {
+  color: white;
+}
+#searchbar > input:focus {
+  cursor: pointer;
+}
+.heading {
+  width: 90%;
+  height: 40px;
+
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+}
+.container {
+  background-color: gray;
+}
+.explorediv {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  margin-bottom: 40px;
+
+  justify-content: space-around;
+
+  color: white;
+  font-size: 20px;
+}
+.explorediv > span:nth-child(2) {
+  padding-left: 70%;
+}
+.navimagesshow {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 150px;
+  grid-gap: 30px;
+}
+#cartshow {
+  object-fit: cover;
+  z-index: 4;
+  position: relative;
+}
+#cartshow > img {
+  width: 100%;
+  height: 100%;
+}
+.newpostdiv {
+  background-color: black;
+}
+.newpostplus {
+  color: black;
+  background-color: #1bb76e;
+}
+
+.headerdivpost {
+  height: 40px;
+  margin: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.headerdivpost > span {
+  color: black;
+}
+.homeimg {
+  margin-top: 12px;
+}
+
+.newpostbody {
+  background-color: black;
+}
+
+.newpostaddiv {
+  height: 40px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.two {
+  width: 25%;
+  height: 100%;
+
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.two > span {
+  font-size: 15px;
+}
+.newpostaddiv > div:nth-child(2) > span {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: blue;
+}
+.newpostaddiv > div:nth-child(4) > span {
+  background-color: green;
+  padding: 5px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.postnav {
+  height: 50px;
+
+  margin-top: 10px;
+}
+
+.allpostdiv > div:nth-child(1) {
+  width: 100%;
+  height: 15vh;
+}
+.allpostdiv > div:nth-child(2) {
+  height: 80vh;
+  width: 100%;
+}
+.allpostdiv > div:nth-child(3) {
+  height: 5vh;
+  width: 100%;
+}
+.containerpost {
+  width: 70%;
+  height: 300px;
+}
+.centerpost {
+  width: 66vw;
+  height: 50vh;
+
+  margin: auto;
+  display: flex;
+}
+.centerpost > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  border: 1px solid blue;
+  position: relative;
+}
+.postleft > img {
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: absolute;
+}
+.postright {
+  background-color: #3c424b;
+}
+.dottedpost {
+  width: 60%;
+  height: 20%;
+  margin: auto;
+  border: 2px dotted white;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  justify-content: baseline;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.postright {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: -2;
+  position: absolute;
+}
+.postright > div {
+  width: 100%;
+  height: 24%;
+}
+.linethread {
+  width: 40%;
+  height: 5%;
+  border-bottom: 1px solid white;
+}
+
+.postright > div:nth-child(1) {
+  text-align: center;
+  color: white;
+}
+
+.postright > div:nth-child(2) {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+}
+.postright > div:nth-child(3) {
+  color: white;
+}
+.linetext {
+  color: white;
+}
+
+.postright > div:nth-child(3) > div {
+  color: white;
+  width: 50%;
+  height: 30px;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.rightfour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightfour > div {
+  text-align: center;
+
+  width: 25%;
+  height: 100%;
+  justify-content: center;
+}
+.rightfour > div > span {
+  text-align: center;
+  color: white;
+}
+
+.crossspan {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  text-align: center;
+
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+#removepopup {
+  visibility: hidden;
+}

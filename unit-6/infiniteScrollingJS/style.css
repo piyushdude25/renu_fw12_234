@@ -1,0 +1,23 @@
+#container {
+  width: 400px;
+  height: 500px;
+  background-color: chocolate;
+  border: 3px solid black;
+  overflow-y: scroll;
+  margin: auto;
+}
+
+#container > ul > li {
+  width: 80%;
+  height: 20%;
+  border: 1px solid yellow;
+  text-align: center;
+  list-style: none;
+  margin: 50px;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: green;
+}

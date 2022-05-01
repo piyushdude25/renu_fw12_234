@@ -6,7 +6,7 @@ const init = {
   isFetching: false,
   error: false,
 };
-export const AuthContext = createContext(init);
+export const AuthContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AuthReducer, init);
   return (

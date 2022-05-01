@@ -3,20 +3,21 @@ import { useRef } from "react";
 import "./login.css";
 import { logincall } from "../Apicalls";
 import { AuthContext } from "../context/AuthContext";
+import { useState } from "react";
 
 export const Login = () => {
-  const email = useRef();
-  const password = useRef();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const { user, isFetching, error, dispatch } = useContext(AuthContext);
   const handleclick = (e) => {
     e.preventDefault();
     // console.log(email.current.value, password.current.value);
-    logincall(
-      { email: email.current.value, password: password.current.value },
-      dispatch
-    );
+    console.log("email", email);
+    console.log("pass", password);
+    logincall({ email, password }, dispatch);
   };
-  console.log(user);
+  console.log("user", user);
   return (
     <div className="login">
       <div className="loginwrapper">
@@ -29,15 +30,23 @@ export const Login = () => {
             <input
               placeholder="email"
               className="logininput"
-              ref={email}
+              value={email}
               required
+              onChange={(e) => {
+                setEmail(e.target.value);
+                console.log(email);
+              }}
             />
             <input
               placeholder="password"
               className="logininput"
-              ref={password}
+              value={password}
               minLength="6"
               required
+              onChange={(e) => {
+                setPassword(e.target.value);
+                console.log(password);
+              }}
             />
             <button className="loginbutton">Log In</button>
             <span className="loginforgot">Forgot Password</span>

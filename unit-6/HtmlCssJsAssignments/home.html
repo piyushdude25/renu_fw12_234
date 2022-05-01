@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="homeimg">
+      <img src="./images//homebg.png" alt="" />
+      <div class="headerdiv">
+        <div class="navbar">
+          <div class="imgurdiv">
+            <img src="/images/imgurlogo.png" class="imgurlogo" />
+            <a href="newpost.html">
+              <span class="plus"
+                ><i class="fa-solid fa-plus"></i> New post</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="navbar">
+          <div id="searchdiv">
+            <input
+              type="text"
+              placeholder="       images, #tags, @users oh my !"
+              class="searchinput"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="signupdiv">
+            <i class="fa-solid fa-house"></i>
+            <span class="plus" id="ad">Go Ad-Free</span>
+            <span>Sign In</span>
+            <span class="plus" id="sign">Sign Up</span>
+          </div>
+        </div>
+      </div>
+      <div class="heading">Humans are the only animals that blush.</div>
+      <div class="explorediv">
+        <span>EXPLORE TAGS</span
+        ><span onclick="callmoreData()"
+          >MORE TAGS <i class="fa-solid fa-plus"></i
+        ></span>
+      </div>
+      <div class="navimagesshow"></div>
+    </nav>
+    <div class="container"></div>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/446adbe796.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+      // var showcart = JSON.parse(localStorage.getItem("imgurCart")) || [];
+      var c = 0;
+
+      var appendcontainer = document.querySelector(".navimagesshow");
+      const arr = [];
+
+      function senddatatoLocal() {
+        fetch("https://fakestoreapi.com/products")
+          .then((res) => res.json())
+          .then((json) => {
+            json.map((e) => {
+              arr.push(e);
+            });
+
+            localStorage.setItem("imgurCart", JSON.stringify(arr));
+          });
+      }
+      senddatatoLocal();
+
+      console.log("arr", arr);
+
+      var showcart = JSON.parse(localStorage.getItem("imgurCart"));
+      console.log("showcart", showcart);
+
+      function callmoreData() {
+        if (c == 0) {
+          if (c == 0)
+            (() => {
+              var arr = [];
+              showcart.map((e, i) => {
+                // console.log("e", e);
+                arr.push(e);
+              });
+              addcart(arr);
+              //console.log(arr.length, "len");
+            })(showcart);
+          c++;
+        } else {
+          (() => {
+            var arr = [];
+            showcart.map((e, i) => {
+              // console.log("e", e);
+              if (arr.length < 10) {
+                arr.push(e);
+              }
+            });
+            addcart(arr);
+            //console.log(arr.length, "len");
+          })(showcart);
+          c = 0;
+        }
+      }
+      (() => {
+        var arr = [];
+        showcart.map((e, i) => {
+          // console.log("e", e);
+          if (arr.length < 10) {
+            arr.push(e);
+          }
+        });
+        addcart(arr);
+        //console.log(arr.length, "len");
+      })(showcart);
+
+      function addcart(data) {
+        document.querySelector(".navimagesshow").innerHTML = "";
+
+        data.map((e, i) => {
+          var first = document.createElement("div");
+          first.setAttribute("id", "cartshow");
+          var img = document.createElement("img");
+          img.src = e.image;
+          first.append(img);
+          appendcontainer.append(first);
+        });
+      }
+    </script>
+  </body>
+</html>

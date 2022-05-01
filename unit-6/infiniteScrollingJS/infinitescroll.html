@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="heading">.....Infinite Scrolling...........</div>
+
+    <div id="container">
+      <h1>SHOW LIST ITEMS</h1>
+      <ul id="listitem"></ul>
+    </div>
+    <script>
+      var listitem = document.getElementById("listitem");
+
+      var c = 1;
+      function showdata() {
+        var i = 0;
+        while (i < 10) {
+          var list = document.createElement("li");
+
+          list.innerHTML = `list number is ${c++}`;
+          listitem.append(list);
+          i++;
+        }
+      }
+
+      showdata();
+
+      const loadData = () => {
+        setTimeout(() => {
+          showdata();
+        }, 1000);
+      };
+
+      const container = document.getElementById("container");
+
+      container.onscroll = () => {
+        if (
+          container.scrollTop + container.offsetHeight >=
+          container.scrollHeight
+        ) {
+          loadData();
+        }
+      };
+    </script>
+  </body>
+</html>
