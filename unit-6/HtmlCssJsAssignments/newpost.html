@@ -70,6 +70,7 @@
     <script src="script.js"></script>
     <script>
      // var crossspan=document.querySelector(".crossspan");
+     var videoimage=document.getElementById("videoimage");
     
       function removepopup(){
         var clickaction=document.querySelector(".centerpost");
@@ -77,6 +78,18 @@
         console.log("popup")
         window.location.href="home.html"
       }
+      var uploadimage="";
+      videoimage.addEventListener("change",function(){
+        console.log(videoimage.value);
+        const reader=new FileReader();
+        reacer.addEventListener("load",()=>{
+          uploadimage=reader.result;
+          console.log("uploadimage",uploadimage)
+          localStorage.setItem("uploadedimageIMGUR", JSON.stringify(uploadimage));
+
+        })
+      })
+      
     </script>
   </body>
 </html>

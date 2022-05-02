@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="newpostbody">
+    <div class="allpostdiv">
+      <div class="navbarpostdiv">
+        <nav class="postnav">
+          <div class="headerdivpost">
+            <div class="one">
+              <div class="navbar">
+                <div class="imgurdiv">
+                  <img src="/images/imgurlogo.png" class="imgurlogo" />
+                </div>
+              </div>
+            </div>
+            <div class="one">
+              <div class="newpostaddiv">
+                <div class="two">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="two">
+                  <span class="newpostplusad">Go Ad-Free</span>
+                </div>
+                <div class="two"><span class="signinpost">Sign In</span></div>
+                <div class="two">
+                  <span class="signinpost">SignUp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="containerupload">
+        <div class="leftupload">
+          <div class="topleftupload"></div>
+          <div class="bottomleftupload"></div>
+        </div>
+        <div class="rightupload">
+          <input type="file" id="myFile" name="filename" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/446adbe796.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+      // var crossspan=document.querySelector(".crossspan");
+
+      function removepopup() {
+        var clickaction = document.querySelector(".centerpost");
+        clickaction.setAttribute("id", "removepopup");
+        console.log("popup");
+        window.location.href = "home.html";
+      }
+    </script>
+  </body>
+</html>
