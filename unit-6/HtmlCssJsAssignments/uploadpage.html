@@ -38,11 +38,15 @@
       </div>
       <div class="containerupload">
         <div class="leftupload">
-          <div class="topleftupload"></div>
+          <div class="topleftupload">
+            <button id="uploadedimageshere">uploaded Images</button>
+          </div>
           <div class="bottomleftupload"></div>
         </div>
         <div class="rightupload">
-          <input type="file" id="myFile" name="filename" />
+          <a href="newpost.html"
+            ><button id="uploadmore">upload More images</button></a
+          >
         </div>
       </div>
     </div>
@@ -52,14 +56,33 @@
     ></script>
     <script src="script.js"></script>
     <script>
-      // var crossspan=document.querySelector(".crossspan");
+      const result = JSON.parse(localStorage.getItem("imgurCart"));
+      console.log("result", result.length);
 
-      function removepopup() {
-        var clickaction = document.querySelector(".centerpost");
-        clickaction.setAttribute("id", "removepopup");
-        console.log("popup");
-        window.location.href = "home.html";
+      const imgcontainer = document.querySelector(".bottomleftupload");
+
+      function showIMages(data) {
+        data.map((e) => {
+          console.log("e", e);
+          //  container=document.createElement("div");
+          var first = document.createElement("div");
+          var second = document.createElement("div");
+          var post = document.createElement("input");
+
+          post.setAttribute("id", "postinput");
+          var image = document.createElement("img");
+          first.setAttribute("id", "postimageset");
+          image.src = `${e}`;
+          first.append(image);
+          var description = document.createElement("input");
+
+          description.setAttribute("id", "descriptioninput");
+          description.placeholder = "Add description of post";
+          second.append(post, first, description);
+          imgcontainer.append(second);
+        });
       }
+      showIMages(result);
     </script>
   </body>
 </html>
