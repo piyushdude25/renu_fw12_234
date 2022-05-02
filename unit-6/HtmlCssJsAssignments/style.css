@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: gray;
 }
 nav {
   width: 100%;
@@ -9,6 +10,9 @@ nav {
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
+}
+a {
+  text-decoration: none;
 }
 nav > div {
   margin-bottom: 50px;
@@ -266,6 +270,7 @@ nav {
   margin: auto;
   display: flex;
 }
+
 .centerpost > div {
   width: 50%;
   height: 100%;
@@ -462,4 +467,8 @@ a {
   text-align: center;
   margin: auto;
   margin-left: 50px;
+}
+.two > span .newpostplusad {
+  width: 120px;
+  height: 30px;
 }

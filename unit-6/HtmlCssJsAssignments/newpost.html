@@ -25,11 +25,11 @@
                   <i class="fa-solid fa-house"></i>
                 </div>
                 <div class="two">
-                  <span class="newpostplusad">Go Ad-Free</span>
+                  <span class="newpostplusad"><a href="uploadpage.html">See Your Posts</a></span>
                 </div>
-                <div class="two"><span class="signinpost">Sign In</span></div>
+                <div class="two"><span class="signinpost"><a href="signin.html">Sign In</a></span></div>
                 <div class="two">
-                  <span class="signinpost">SignUp</span>
+                  <span class="signinpost"><a href="signup.html">SignUp</a></span>
                 </div>
               </div>
             </div>
@@ -91,14 +91,14 @@
     return path.substr(x+1);
   return path; // just the filename
 }
-    const result = JSON.parse(localStorage.getItem("imgurCart")) || [];
+    const result = JSON.parse(localStorage.getItem("imgurPosted")) || [];
      function fileUploadfun(path){
       // console.log(path);
        const  reader=new FileReader;
        reader.addEventListener("load",()=>{
          console.log(reader.result);
          result.push(reader.result);
-         localStorage.setItem("imgurCart",JSON.stringify(result));
+         localStorage.setItem("imgurPosted",JSON.stringify(result));
        });
        reader.readAsDataURL(path[0]);
        

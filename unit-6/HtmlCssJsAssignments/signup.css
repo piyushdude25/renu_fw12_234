@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20,21,24);
+}
+#mainBox{
+   
+    width: 500px;
+    margin: auto;
+    line-height: 1%;
+    margin-top: 1%;
+}
+
+.mainlogo>img{
+    width: 40%;
+    margin: 5% 50% 10% 30%;
+    text-align: center;
+
+    background-color: white;
+    
+    padding: 1%;
+    border-radius: 10px;
+}
+.mainlogo{
+    margin:auto;
+    
+}
+p{
+    text-align: center;
+    color: white;
+}
+#logosDiv{
+    display: flex;
+    padding: 2%;
+    /* border: 1px solid rgb(109, 66, 226); */
+    background-color: rgb(68, 72, 76);
+    border-radius: 10px;
+}
+.subLogosDiv{
+    border: 1px solid rgb(4, 141, 27);
+    border: none;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2%;
+    width: 10%;
+
+    background-color: rgb(20,21,24);
+}
+.facebook:hover{
+    background-color: rgb(58,85,142);
+    cursor: pointer;
+}
+.twitter:hover{
+    background-color: rgb(64,153,255);
+    cursor: pointer;
+}
+.apple:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(20,21,24);
+    cursor: pointer;
+}
+.apple:hover>i{
+    cursor: pointer;
+    color: black;
+}
+.google:hover{
+    background-color: rgb(66,133,244);
+    cursor: pointer;
+}
+.yahoo:hover{
+    background-color:rgb(123,0,153) ;
+    cursor: pointer;
+}
+.subLogosDiv>i{
+    /* width: 100%; */
+    margin:  0 0 0 40%;
+    color: rgb(255, 255, 255);
+    
+}
+
+#inputBox{
+    margin: auto;
+    /* border: 5px solid rgb(109, 66, 226); */
+    padding: 2%;
+    background-color: rgb(68, 72, 76);
+    border-radius: 10px;
+}
+input{
+    width: 90%;
+    margin-left: 3.5%;
+    padding: 5px;
+    background-color: rgb(20,21,24);
+    border: none;
+    margin: 2%;
+    padding: 2% 3% ;
+    border-radius: 10px;
+    color: white;
+}
+.flex{
+    display: flex;
+}
+span{
+    font-size: 110%;
+    
+}
+.buttons{
+    margin-left: 70%;
+    margin-top: 2%;
+}
+.btn1{
+    width: 200%;
+    /* height: 200%; */
+    padding:  5% 6%;
+    background-color: rgb(20,21,24);
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* border: 1px solid red; */
+  
+}
+.btn2{
+    width: 200%;
+    padding: 5% 6% ;
+    background-color:  rgb(66,133,244);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
